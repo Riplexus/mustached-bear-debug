@@ -21,7 +21,8 @@
     <script src="./script/navigator.js"></script>
     <script type="text/javascript">
 
-        $(function () {
+        document.addEventListener("deviceready", function() {
+
             $('.sidebar').height(MS.dimens.viewport.height);
 
             if (device.platform === 'Android') {
@@ -35,7 +36,8 @@
             MS.dom.sidebarLeft.find('li').click(function() {
                 MS.navigator.goTo($(this).attr('data-target'));
             });
-        });
+
+        }, false);
 
     </script>
 </head>
