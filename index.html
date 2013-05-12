@@ -22,9 +22,14 @@
     <script src="./script/navigator.js"></script>
     <script type="text/javascript">
 
-        alert('asd');
+        alert('run head script');
+
+        document.addEventListener('deviceready', function() {
+            alert('phonegap deviceready');
+        }, false);
 
         $(function () {
+            alert('jquery document on load');
             $('.sidebar').height(MS.dimens.viewport.height);
 
             if (device.platform === 'Android') {
