@@ -1,6 +1,6 @@
 window.MS = window.MS || {};
 
-document.addEventListener("deviceready", function() {
+$(function() {
 
     MS.dimens = {
         viewport: {
@@ -13,4 +13,4 @@ document.addEventListener("deviceready", function() {
         }
     };
 
-}, false);
+});

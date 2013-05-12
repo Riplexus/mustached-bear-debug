@@ -1,6 +1,6 @@
 window.MS = window.MS || {};
 
-document.addEventListener("deviceready", function() {
+$(function() {
 
     MS.navigator = {
         history: [],
@@ -112,4 +112,4 @@ document.addEventListener("deviceready", function() {
         }
     };
 
-}, false);
+});
